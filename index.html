@@ -517,8 +517,8 @@
     <div class="stat-item" data-stat="years"><span class="stat-number" id="statYears">10+</span> <div class="stat-label">years in agriculture</div></div>
     <div class="stat-item" data-stat="acres"><span class="stat-number" id="statAcres">135</span> <div class="stat-label">acres under management</div></div>
     <div class="stat-item" data-stat="crop"><span class="stat-number" id="statCrop">5,000</span> <div class="stat-label">kg annual crop output</div></div>
-    <div class="stat-item" data-stat="workforce"><span class="stat-number" id="statWorkforce">52</span> <div class="stat-label">permanent workforce*</div></div>
-    <div class="stat-item" data-stat="partners"><span class="stat-number" id="statPartners">8</span> <div class="stat-label">export & institutional partners</div></div>
+    <div class="stat-item" data-stat="workforce"><span class="stat-number" id="statWorkforce">2</span> <div class="stat-label">permanent workforce*</div></div>
+    <div class="stat-item" data-stat="partners"><span class="stat-number" id="statPartners">3</span> <div class="stat-label">export & institutional partners</div></div>
   </div>
   <p style="font-size: 0.9rem; text-align: right;"><i>* includes seasonal support</i></p>
 </section>
@@ -634,35 +634,7 @@
       setTimeout(() => toastEl.classList.remove('show'), 2000);
     }
 
-    // Interactive stats: click numbers to increment (simulate growth)
-    const statIds = ['statYears', 'statAcres', 'statCrop', 'statWorkforce', 'statPartners'];
-    statIds.forEach(id => {
-      const el = document.getElementById(id);
-      el.addEventListener('click', function(e) {
-        e.stopPropagation();
-        let text = this.innerText;
-        let numeric = parseFloat(text);
-        if (isNaN(numeric)) {
-          // handle years like "10+"
-          if (text.includes('+')) {
-            numeric = parseInt(text) + 1;
-            this.innerText = numeric + '+';
-          } else return;
-        } else {
-          if (id === 'statAcres') {
-            numeric = Math.round((numeric + 5) * 10) / 10;
-          } else if (id === 'statCrop') {
-            numeric += 150;
-          } else if (id === 'statWorkforce') {
-            numeric += 2;
-          } else if (id === 'statPartners') {
-            numeric += 1;
-          } else numeric += 1;
-          this.innerText = numeric;
-        }
-        showToast('📈 metric updated (demo)');
-      });
-    });
+ 
 
     // Contact form removed per request; no submit handler present
 
