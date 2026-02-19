@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Sazzad Kamal Chowdhury – Founder & CEO, Miniforest Agro Farms</title>
+  <!-- SEO meta -->
+  <meta name="description" content="Professional profile of Mohammed Sazzad Kamal Chowdhury, Founder & CEO of Miniforest Agro Farms. Trusted leadership in tea, rubber & sustainable agriculture.">
+  <!-- Clean, professional fonts: serif for headings, modern sans for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Libre+Baskerville:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons (subtle, professional set) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Color palette: deep green, earthy brown, white, soft gray */
+    :root {
+      --green-deep: #1e3f2f;        /* deep forest */
+      --brown-earth: #6b4f3c;       /* warm, stable brown */
+      --white-pure: #ffffff;
+      --gray-soft: #f4f3f1;          /* background / cards */
+      --gray-mid: #d9d6d2;           /* borders / lines */
+      --gray-text: #3a3a3a;          /* body copy */
+      --heading-color: #1e3f2f;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--white-pure);
+      color: var(--gray-text);
+      line-height: 1.6;
+      font-weight: 400;
+      font-size: 1rem;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 600;
+      color: var(--heading-color);
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.8rem;
+      border-left: 6px solid var(--brown-earth);
+      padding-left: 1.2rem;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ----- hero ----- */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      padding: 3rem 0 4rem 0;
+    }
+
+    .hero-content h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--green-deep);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-subtitle {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.3rem;
+      color: var(--brown-earth);
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+
+    .hero-statement {
+      font-size: 1.2rem;
+      color: var(--gray-text);
+      margin: 1.5rem 0 2rem 0;
+      max-width: 90%;
+      border-left: 3px solid var(--gray-mid);
+      padding-left: 1.2rem;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background-color: var(--green-deep);
+      color: white;
+      padding: 0.9rem 2.5rem;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      border: 2px solid var(--green-deep);
+      transition: all 0.2s ease;
+      font-size: 1.1rem;
+    }
+
+    .cta-btn:hover {
+      background-color: transparent;
+      color: var(--green-deep);
+    }
+
+    /* professional portrait: large, outdoor/nature background */
+    .hero-image {
+      background-image: url('https://iili.io/q2EDSoX.jpg');
+      background-size: cover;
+      background-position: center 20%;
+      height: 480px;
+      width: 100%;
+      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.15);
+      border: 1px solid var(--gray-mid);
+    }
+
+    /* about section */
+    .about {
+      background-color: var(--gray-soft);
+      padding: 4rem 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .about-text p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    /* leadership icons */
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.8rem;
+      margin: 3rem 0;
+    }
+
+    .icon-card {
+      background: white;
+      padding: 2rem 1.2rem;
+      text-align: center;
+      border: 1px solid var(--gray-mid);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .icon-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 18px -8px rgba(0,0,0,0.05);
+    }
+
+    .icon-card i {
+      font-size: 2.5rem;
+      color: var(--green-deep);
+      margin-bottom: 1.2rem;
+    }
+
+    .icon-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .icon-card p {
+      font-size: 0.95rem;
+      color: #5a5a5a;
+    }
+
+    /* stats achievements */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      border-top: 2px solid var(--brown-earth);
+      padding-top: 1.5rem;
+    }
+
+    .stat-number {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--green-deep);
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      color: var(--brown-earth);
+      font-weight: 500;
+    }
+
+    /* media & recognition */
+    .media-logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem 3rem;
+      align-items: center;
+      margin: 2rem 0 1rem;
+    }
+
+    .badge {
+      background: white;
+      border: 1px solid var(--gray-mid);
+      padding: 0.5rem 1.5rem;
+      font-weight: 500;
+      color: var(--green-deep);
+      font-size: 1rem;
+      border-radius: 0px;
+      display: inline-block;
+    }
+
+    .badge i {
+      margin-right: 8px;
+      color: var(--brown-earth);
+    }
+
+    /* gallery grid */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.2rem;
+      margin: 2rem 0 3rem;
+    }
+
+    .gallery-item {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      filter: grayscale(0.15) brightness(0.98);
+      transition: all 0.25s;
+      border: 1px solid #e2dfdb;
+    }
+
+    .gallery-item:hover {
+      filter: grayscale(0);
+      transform: scale(1.01);
+    }
+
+    /* contact */
+    .contact-section {
+      background: var(--gray-soft);
+      padding: 4rem 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .contact-details p {
+      margin: 1.2rem 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-details i {
+      color: var(--green-deep);
+      width: 2rem;
+      font-size: 1.3rem;
+    }
+
+    .map-placeholder {
+      background: #d3d0cb;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green-deep);
+      border: 1px solid var(--gray-mid);
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .map-placeholder:hover {
+      background: #c5c0b9;
+    }
+
+    /* modern additions: live counter simulation, modal, dark/light ? we'll keep subtle but functional */
+
+    /* interactive contact form */
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.9rem;
+      margin-bottom: 1rem;
+      border: 1px solid var(--gray-mid);
+      background: white;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .contact-form button {
+      background: var(--green-deep);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 2px solid var(--green-deep);
+      transition: 0.2s;
+    }
+
+    .contact-form button:hover {
+      background: transparent;
+      color: var(--green-deep);
+    }
+
+    /* footer */
+    .footer {
+      background-color: #1a2c23; /* darker green */
+      color: #dad7d2;
+      padding: 2rem 0;
+      text-align: center;
+      border-top: 4px solid var(--brown-earth);
+    }
+
+    .footer a {
+      color: #e2dcd5;
+      text-decoration: none;
+      margin: 0 0.8rem;
+    }
+
+    .footer a:hover {
+      color: white;
+    }
+
+    /* responsive */
+    @media (max-width: 1024px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-image { height: 400px; }
+      .stats { grid-template-columns: repeat(3, 1fr); }
+      .leadership-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 700px) {
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: 1fr; }
+      .leadership-grid { grid-template-columns: 1fr; }
+      h2 { font-size: 1.9rem; }
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--gray-mid);
+      margin: 1.5rem 0;
+    }
+    /* subtle transition on everything */
+    a, button, .icon-card, .gallery-item {
+      transition: all 0.2s ease-in-out;
+    }
+
+    /* --- NEW MODERN FUNCTIONALITIES --- */
+    /* floating back-to-top + theme toggle (modernity) */
+    .floating-panel {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 999;
+    }
+
+    .floating-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--green-deep);
+      color: white;
+      border: 2px solid white;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.4rem;
+      transition: 0.2s;
+    }
+
+    .floating-btn:hover {
+      background: var(--brown-earth);
+      transform: scale(1.07);
+    }
+
+    /* light/dark theme (optional but adds modern feel) – use class toggling */
+    body.light-mode {
+      /* default is already light, we use dark class to invert a few colors */
+    }
+    body.dark-mode {
+      background-color: #1e2622;
+      color: #e2e0db;
+      --gray-soft: #2b332e;
+      --gray-mid: #5e645f;
+      --white-pure: #1e2622;
+      --gray-text: #d0cfc9;
+      --heading-color: #b9d2b1;
+      --brown-earth: #b48b5a;
+      --green-deep: #76a68b;
+    }
+    body.dark-mode .icon-card {
+      background: #2d3a32;
+      color: #ddd;
+    }
+    body.dark-mode .badge {
+      background: #2d3a32;
+    }
+    /* quick message toast */
+    .toast-message {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      background: var(--green-deep);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 40px;
+      font-weight: 500;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      z-index: 1000;
+      opacity: 0;
+      transition: opacity 0.25s;
+      pointer-events: none;
+    }
+    .toast-message.show {
+      opacity: 1;
+    }
+
+    /* live stat updater (fake micro-interaction) */
+    .stat-number small {
+      font-size: 1.2rem;
+      font-family: 'DM Sans', sans-serif;
+      opacity: 0.8;
+    }
+
+    /* tab focus outline */
+    :focus-visible {
+      outline: 3px solid var(--brown-earth);
+    }
+  </style>
+</head>
+<body class="light-mode">
+
+<!-- Hero Section -->
+<section class="container" style="padding-top: 2rem;">
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Mohammed Sazzad Kamal Chowdhury</h1>
+      <div class="hero-subtitle">Founder & CEO, Miniforest Agro Farms</div>
+      <div class="hero-statement">
+        Dedicated to advancing sustainable agricultural growth through modern practices and responsible leadership across tea, rubber, and nursery cultivation.
+      </div>
+      <a href="#contact" class="cta-btn"><i class="fas fa-paper-plane" style="margin-right: 8px;"></i>Connect & visit</a>
+    </div>
+    <div class="hero-image" role="img" aria-label="Mohammed Sazzad Kamal Chowdhury in a plantation setting" title="Mr. Kamal at Miniforest Agro Farms"></div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div>
+      <h2>Professional journey</h2>
+    </div>
+    <div class="about-text">
+      <p><strong>Mohammed Sazzad Kamal Chowdhury</strong> is a seasoned agricultural entrepreneur and founder of <strong>Miniforest Agro Farms</strong>, with over a decade of experience in tropical agriculture. His professional journey began in the <strong>land of Fatikchari</strong>, where he cultivated his first plantations and developed a deep understanding of soil management, sustainable farming, and local crop ecosystems. Prior to this, he gained substantial business experience as a successful entrepreneur in Dubai and earned his <strong>MBA in India</strong>, equipping him with international business acumen and strategic management skills.</p> <p>Under his leadership, Miniforest Agro Farms integrates traditional agricultural wisdom with modern cultivation science, expanding operations into tea estates, rubber plantations, high-value nursery stock, and diversified crop production. His approach emphasizes <strong>discipline, ecological stewardship, and sustainable growth</strong>, ensuring that each hectare under management remains productive while preserving long-term soil health.</p> <p>Mr. Chowdhury advocates for minimal-till practices, integrated pest management, and precision agriculture, applying science-backed methodologies to optimize yields, resource efficiency, and environmental responsibility. He actively contributes to the agricultural sector through service on advisory boards, promoting knowledge-sharing, innovation adoption, and community empowerment. He believes that true sustainability stems from strategic investment in both people and land—a philosophy that guides every aspect of Miniforest Agro Farms.</p> <p>Combining international business experience, advanced academic training, and hands-on agricultural expertise, Mr. Chowdhury positions Miniforest Agro Farms as a trusted and credible partner for corporate clients, government agencies, and global agricultural stakeholders. His leadership ensures measurable outcomes in production, quality, and community impact, reflecting a commitment to long-term excellence and responsible land stewardship.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Leadership & Vision (icon blocks) -->
+<section class="container" style="padding: 4rem 0;">
+  <h2>Leadership & vision</h2>
+  <div class="leadership-grid">
+    <div class="icon-card">
+      <i class="fas fa-seedling"></i>
+      <h3>Regenerative philosophy</h3>
+      <p>Soil-first approach: intercropping, organic enrichment, and water conservation across all farms.</p>
+    </div>
+    <div class="icon-card">
+      <i class="fas fa-flask"></i>
+      <h3>Precision innovation</h3>
+      <p>Adopting remote sensing and controlled irrigation without disrupting the natural character of the land.</p>
+    </div>
+    <div class="icon-card">
+      <i class="fas fa-hand-holding-heart"></i>
+      <h3>Community resilience</h3>
+      <p>Fair employment for 3+ families, skill training, and local school support in plantation regions.</p>
+    </div>
+    <div class="icon-card">
+      <i class="fas fa-tree"></i>
+      <h3>Legacy forestry</h3>
+      <p>Integration of native timber and shade trees within tea and rubber landscapes for biodiversity.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Professional Achievements (stat blocks) with micro‑interaction (update numbers on click) -->
+<section class="container" style="padding: 1rem 0 4rem;">
+  <h2>Professional scale & partnerships <span style="font-size: 0.9rem; font-family: 'DM Sans'; font-weight:300;">(click numbers to simulate growth)</span></h2>
+  <div class="stats" id="statsContainer">
+    <div class="stat-item" data-stat="years"><span class="stat-number" id="statYears">10+</span> <div class="stat-label">years in agriculture</div></div>
+    <div class="stat-item" data-stat="acres"><span class="stat-number" id="statAcres">135</span> <div class="stat-label">acres under management</div></div>
+    <div class="stat-item" data-stat="crop"><span class="stat-number" id="statCrop">5,000</span> <div class="stat-label">kg annual crop output</div></div>
+    <div class="stat-item" data-stat="workforce"><span class="stat-number" id="statWorkforce">52</span> <div class="stat-label">permanent workforce*</div></div>
+    <div class="stat-item" data-stat="partners"><span class="stat-number" id="statPartners">8</span> <div class="stat-label">export & institutional partners</div></div>
+  </div>
+  <p style="font-size: 0.9rem; text-align: right;"><i>* includes seasonal support</i></p>
+</section>
+
+<!-- Media & Recognition (optional, with badges) -->
+<section class="about" style="background: white; padding: 3rem 0;">
+  <div class="container">
+    <h2>Recognition & affiliations</h2>
+    <div class="media-logos">
+      <span class="badge"><i class="fas fa-award"></i> Member of Bangladesh Rubber Garden Association </span>
+      <span class="badge"><i class="fas fa-building"></i> Bangladesh Tea Board partner</span>
+      <span class="badge"><i class="fas fa-leaf"></i> Government of Bangladesh certified</span>
+      <span class="badge"><i class="fas fa-award"></i> Member of Bangladesh Rubber Board </span>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="container" style="padding: 4rem 0;">
+  <h2>Operations & estates</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item" style="background-image: url('https://iili.io/q2EgjiN.jpg');" title="Tea plantation"></div>
+    <div class="gallery-item" style="background-image: url('https://iili.io/q2EUQwv.jpg');" title="Rubber tapping"></div>
+    <div class="gallery-item" style="background-image: url('https://iili.io/q2EUnyJ.jpg');" title="Nursery & tissue culture"></div>
+    <div class="gallery-item" style="background-image: url('https://iili.io/q2ESOLN.jpg');" title="Harvesting team"></div>
+  </div>
+  <p style="text-align: right; font-style: italic; color: var(--brown-earth);">Miniforest Agro Farms – Chattogram</p>
+</section>
+
+<!-- Contact Section with working form and map -->
+<section class="contact-section" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <h2>Contact & office</h2>
+      <div class="contact-details">
+        <p><i class="fas fa-phone-alt"></i> +880 167 420 1072</p>
+        <p><i class="fas fa-envelope"></i> agroconcern@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Address: Kanchanagar, Fatickchari, Chattogram, Bangladesh</p>
+      </div>
+      <div class="map-placeholder">
+        <a href="https://maps.app.goo.gl/Rpp8cW3fHi1iyXx66" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
+          <i class="fas fa-map" style="margin-right: 10px;"></i>
+          <span>Google Map – Miniforest Agro Farms (Chattogram)</span>
+        </a>
+      </div>
+    </div>
+    <div>
+      <!-- contact info (form removed per request) -->
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p style="font-size: 1.1rem; margin-bottom: 1rem;">Miniforest Agro Farms — rooted in excellence</p>
+    <p>
+      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="#"><i class="fas fa-globe"></i> Company site</a>
+    </p>
+    <p style="margin-top: 2rem; font-size: 0.9rem; color: #bbb5ae;">© 2026 Mohammed Sazzad Kamal Chowdhury. All rights reserved. <br> Miniforest Agro Farms is a registered trademark.</p>
+  </div>
+</footer>
+
+<!-- Floating panel for extra modernity (back to top + theme toggle) -->
+<div class="floating-panel">
+  <div class="floating-btn" id="themeToggle" title="Toggle dark/light mode"><i class="fas fa-moon"></i></div>
+  <div class="floating-btn" id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></div>
+</div>
+
+<!-- Toast for interactions -->
+<div class="toast-message" id="toast">Welcome to Miniforest Agro Farms</div>
+
+<!-- Modern functionalities: interactive stats, form demo, theme toggle, back to top, smooth, and toast -->
+<script>
+  (function() {
+    // Smooth scroll for internal links (include backToTop)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Back to top button
+    const backBtn = document.getElementById('backToTop');
+    backBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Theme toggle (light/dark)
+    const themeBtn = document.getElementById('themeToggle');
+    const body = document.body;
+    themeBtn.addEventListener('click', () => {
+      if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        themeBtn.innerHTML = '<i class="fas fa-moon"></i>';
+      } else {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        themeBtn.innerHTML = '<i class="fas fa-sun"></i>';
+      }
+      // Toast on theme toggle removed per request
+    });
+
+    // Toast helper
+    const toastEl = document.getElementById('toast');
+    function showToast(msg) {
+      toastEl.textContent = msg;
+      toastEl.classList.add('show');
+      setTimeout(() => toastEl.classList.remove('show'), 2000);
+    }
+
+    // Interactive stats: click numbers to increment (simulate growth)
+    const statIds = ['statYears', 'statAcres', 'statCrop', 'statWorkforce', 'statPartners'];
+    statIds.forEach(id => {
+      const el = document.getElementById(id);
+      el.addEventListener('click', function(e) {
+        e.stopPropagation();
+        let text = this.innerText;
+        let numeric = parseFloat(text);
+        if (isNaN(numeric)) {
+          // handle years like "10+"
+          if (text.includes('+')) {
+            numeric = parseInt(text) + 1;
+            this.innerText = numeric + '+';
+          } else return;
+        } else {
+          if (id === 'statAcres') {
+            numeric = Math.round((numeric + 5) * 10) / 10;
+          } else if (id === 'statCrop') {
+            numeric += 150;
+          } else if (id === 'statWorkforce') {
+            numeric += 2;
+          } else if (id === 'statPartners') {
+            numeric += 1;
+          } else numeric += 1;
+          this.innerText = numeric;
+        }
+        showToast('📈 metric updated (demo)');
+      });
+    });
+
+    // Contact form removed per request; no submit handler present
+
+    // Additional: map link interactivity
+    document.querySelector('.map-placeholder a').addEventListener('click', function() {
+      showToast('Opening Google Maps');
+    });
+
+    // show initial welcome toast after 1 sec (optional)
+    setTimeout(() => showToast('Welcome to my profile website!'), 1000);
+  })();
+</script>
+</body>
+</html>
